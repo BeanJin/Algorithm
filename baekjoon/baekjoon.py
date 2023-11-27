@@ -188,3 +188,18 @@ for i in range(10) :
 a = set(l1)
 
 print(len(a))
+
+# 10813
+
+n, m = map(int, input().split())
+
+l1 = [i for i in range(1, n+1)]
+
+for j in range(m) :
+    a, b = map(int, input().split())
+
+    t = l1[a-1 : b]
+    t.reverse()
+    l1[a-1 : b] = t
+
+print(*l1)
