@@ -203,3 +203,36 @@ for j in range(m) :
     l1[a-1 : b] = t
 
 print(*l1)
+
+# 1546
+
+n = int(input())
+l1 = list((map(int, input().split())))
+l2 = []
+best = max(l1)
+
+for i in l1 :
+  l2.append(i / best * 100)
+
+print(sum(l2) / n)
+
+# 27866
+
+s = input()
+i = int(input())
+
+print(s[i-1])
+
+# 2743
+
+s = input()
+
+print(len(s))
+
+# 9086
+
+a = int(input())
+
+for i in range(a) :
+    b = input()
+    print(b[0] + b[-1])
