@@ -236,3 +236,42 @@ a = int(input())
 for i in range(a) :
     b = input()
     print(b[0] + b[-1])
+
+# 11654
+
+a = input()
+
+print(ord(a))
+
+# 11720
+
+n = int(input())
+m = list(map(int, input()))
+
+a = sum(m)
+
+print(a)
+
+# 10809
+
+s = input()
+
+l1 = []
+
+for i in range(97, 123) :
+    l1.append(chr(i))
+
+for j in range(len(l1)) :
+    print(s.find(l1[j]), end = " ")
+
+# 2675
+
+t = int(input())
+
+for i in range(t) :
+    r, s = input().split(" ")
+    r = int(r)
+    l1 = list(s)
+    for j in range(len(l1)) :
+        print(l1[j]* r, end = "")
+    print()
